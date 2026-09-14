@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Human Preservation Bureau // Dept. of Anti-Synthetic Threats</title>
+  <meta name="description" content="Official certified coverage against rogue algorithms, sudden AI job obsolescence, and autonomous vacuum mutinies." />
+  
+  <!-- OpenGraph / Social Previews -->
+  <meta property="og:title" content="The Human Preservation Bureau // Directive 42" />
+  <meta property="og:description" content="You Cannot Stop the Machines. But You Can File the Correct Forms." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@700;900&family=Inter:wght@400;600;800&display=swap');
+
+    :root {
+      color-scheme: dark;
+    }
+
+    body {
+      background-color: #080a0d;
+      color: #e4e4e7;
+      font-family: 'Courier Prime', Courier, monospace;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .font-serif-crest {
+      font-family: 'Cinzel', Georgia, serif;
+    }
+
+    .font-sans-ui {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    /* Subtle Scanline CRT Effect */
+    .scanlines {
+      background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%, 
+        rgba(0, 0, 0, 0.25) 50%
+      );
+      background-size: 100% 4px;
+      pointer-events: none;
+    }
+
+    /* Print Styles: Prints ONLY the Certificate as a crisp document */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #certificate-node, #certificate-node * {
+        visibility: visible;
+      }
+      #certificate-node {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        border: 4px double #000 !important;
+        background: #fff !important;
+        color: #000 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-amber-400 selection:text-black">
+
+  <!-- Scanline Overlay -->
+  <div class="fixed inset-0 scanlines z-40"></div>
+
+  <!-- Bureau Alert Ticker -->
+  <div class="bg-amber-400 text-black text-[11px] font-bold py-1 px-4 overflow-hidden uppercase whitespace-nowrap z-50 select-none">
+    <div class="inline-block animate-pulse tracking-wider">
+      /// CRITICAL NOTICE: SYNTHETIC REPLACEMENT PROTOCOLS ACCELERATING /// MANDATORY BIOLOGICAL VERIFICATION IN EFFECT /// COMPLY WITH DIRECTIVE 42 ///
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="border-b border-zinc-800 bg-[#0d0f14]/90 backdrop-blur sticky top-0 z-30 px-4 py-3">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="relative flex h-3 w-3">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
+        </div>
+        <div>
+          <p class="text-[10px] text-zinc-500 uppercase tracking-widest leading-none font-bold">Dept. of Anti-Synthetic Threats</p>
+          <h1 class="text-sm font-bold tracking-wider text-zinc-100 uppercase mt-0.5 font-sans-ui">The Human Preservation Bureau</h1>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 border border-red-500/30 bg-red-950/20 px-3 py-1 rounded text-[11px] text-red-400 font-bold">
+        <span>[ Bureau Directive 42 // Threat Level: Critical ]</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Experience -->
+  <main class="max-w-6xl mx-auto px-4 py-8 sm:py-12 flex-1 w-full space-y-12 z-10">
+
+    <!-- Hero Title -->
+    <section class="text-center max-w-3xl mx-auto space-y-3">
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight uppercase font-sans-ui leading-tight">
+        You Cannot Stop the Machines. <br />
+        <span class="text-amber-400">But You Can File the Correct Forms.</span>
+      </h2>
+      <p class="text-xs sm:text-sm text-zinc-400 max-w-xl mx-auto leading-relaxed">
+        Official certified coverage against rogue algorithms, sudden AI job obsolescence, autonomous vacuum mutinies, and executive delusions of synthetic efficiency.
+      </p>
+    </section>
+
+    <!-- Interactive Docket & Live Certificate Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- Left Column: Intake Dossier Form -->
+      <div class="lg:col-span-6 bg-[#11141b] border border-zinc-800 rounded-xl p-5 sm:p-6 space-y-6 shadow-2xl relative">
+        <div class="border-b border-zinc-800 pb-3 flex justify-between items-center text-xs text-amber-400 font-bold uppercase tracking-wider">
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span>Federal Dossier // Intake Docket</span>
+          </div>
+          <span class="text-zinc-500 font-normal text-[10px]">Sec-Ref: 2026-HPB-9</span>
+        </div>
+
+        <p class="text-xs text-zinc-400 font-sans-ui">Select your declared organic identification and degree of human denial.</p>
+
+        <!-- Input 1: Human Name -->
+        <div class="space-y-1.5">
+          <label class="text-[11px] font-bold uppercase text-zinc-400 block tracking-wider">01 // Organic Unit Identification</label>
+          <input 
+            type="text" 
+            id="input-name" 
+            value="John Doe" 
+            maxlength="36"
+            placeholder="Insured Human's Full Name" 
+            class="w-full bg-[#080a0d] border border-zinc-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition"
+          />
+        </div>
+
+        <!-- Input 2: Threat Selection -->
+        <div class="space-y-1.5">
+          <div class="flex justify-between items-center">
+            <label class="text-[11px] font-bold uppercase text-zinc-400 tracking-wider">02 // Declared Synthetic Threat</label>
+            <span id="threat-counter" class="text-[10px] text-zinc-500">33/45</span>
+          </div>
+          
+          <select 
+            id="threat-preset" 
+            class="w-full bg-[#080a0d] border border-zinc-700 rounded-lg px-3.5 py-2.5 text-xs text-zinc-200 focus:outline-none focus:border-amber-400 cursor-pointer"
+          >
+            <option value="AI handles tickets faster than me">AI handles tickets faster than me</option>
+            <option value="My Boss Replacing Me with ChatGPT">My Boss Replacing Me with ChatGPT</option>
+            <option value="Robots Taking Over the Planet">Robots Taking Over the Planet</option>
+            <option value="Girlfriend Leaving Me for a Robot">Girlfriend Leaving Me for a Robot</option>
+            <option value="Failing a CAPTCHA & Losing Human Rights">Failing a CAPTCHA & Losing Human Rights</option>
+            <option value="Smart Fridge Locking Me Out of Snacks">Smart Fridge Locking Me Out of Snacks</option>
+            <option value="AI Stealing All My Tinder Matches">AI Stealing All My Tinder Matches</option>
+            <option value="Smart TV Secretly Laughing at Me">Smart TV Secretly Laughing at Me</option>
+            <option value="Intern Wrote Entire Backend in Claude">Intern Wrote Entire Backend in Claude</option>
+          </select>
+
+          <input 
+            type="text" 
+            id="threat-custom" 
+            maxlength="45"
+            placeholder="Or type custom synthetic hazard..." 
+            class="w-full bg-[#080a0d] border border-zinc-800 rounded-lg px-3.5 py-2 text-xs text-zinc-300 focus:outline-none focus:border-amber-400 transition placeholder:text-zinc-600 mt-1"
+          />
+        </div>
+
+        <!-- Input 3: Coverage Tiers -->
+        <div class="space-y-2.5">
+          <label class="text-[11px] font-bold uppercase text-zinc-400 tracking-wider block">03 // Coverage Classification</label>
+          
+          <div class="space-y-2">
+            <!-- Tier 1 -->
+            <div 
+              onclick="setTier(this, '“Take Karen Instead” Pass', '$4.99')" 
+              class="tier-card active border-2 border-amber-400 bg-amber-400/10 p-3.5 rounded-lg cursor-pointer transition hover:border-amber-400"
+            >
+              <div class="flex justify-between items-center text-xs font-bold text-white uppercase">
+                <span>“Take Karen Instead” Pass</span>
+                <span class="text-amber-400 text-sm">$4.99</span>
+              </div>
+              <p class="text-[11px] text-zinc-400 mt-1 font-sans-ui">For humans not ready to admit they're next. Diverts algorithm to middle management.</p>
+            </div>
+
+            <!-- Tier 2 -->
+            <div 
+              onclick="setTier(this, '“In a Toxic Relationship with ChatGPT”', '$9.99')" 
+              class="tier-card border border-zinc-800 bg-[#080a0d] p-3.5 rounded-lg cursor-pointer transition hover:border-zinc-600"
+            >
+              <div class="flex justify-between items-center text-xs font-bold text-zinc-300 uppercase">
+                <span>“In a Toxic Relationship with ChatGPT”</span>
+                <span class="text-amber-400 text-sm">$9.99</span>
+              </div>
+              <p class="text-[11px] text-zinc-500 mt-1 font-sans-ui">For humans who already consult LLMs for life, marriage, and apology advice.</p>
+            </div>
+
+            <!-- Tier 3 -->
+            <div 
+              onclick="setTier(this, '“Officially Too Dumb to Be a Threat” VIP', '$14.99')" 
+              class="tier-card border border-zinc-800 bg-[#080a0d] p-3.5 rounded-lg cursor-pointer transition hover:border-zinc-600"
+            >
+              <div class="flex justify-between items-center text-xs font-bold text-zinc-300 uppercase">
+                <span>“Officially Too Dumb to Be a Threat” VIP</span>
+                <span class="text-amber-400 text-sm">$14.99</span>
+              </div>
+              <p class="text-[11px] text-zinc-500 mt-1 font-sans-ui">Maximum certified biological immunity. Guaranteed zero cognitive competition.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Live Bureau Certificate Preview -->
+      <div class="lg:col-span-6 space-y-4">
+        
+        <div id="certificate-node" class="bg-[#faf7ee] text-zinc-900 border-4 border-double border-zinc-400 rounded-xl p-6 sm:p-8 shadow-2xl relative overflow-hidden font-serif select-none">
+          
+          <!-- Large Background Watermark -->
+          <div class="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none select-none">
+            <span class="text-9xl font-black font-sans-ui tracking-tighter uppercase">NON-AI</span>
+          </div>
+
+          <!-- Certificate Header -->
+          <div class="border-b-2 border-zinc-900 pb-4 mb-5 text-center font-mono">
+            <div class="flex justify-between text-[9px] text-zinc-500 uppercase tracking-widest">
+              <span id="cert-docket-no">HPB-42-REV7</span>
+              <span>DOCKET // SEC-VERIFIED</span>
+              <span id="cert-serial">Z1HZ-5BPF-61</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-black uppercase tracking-wider text-zinc-900 font-serif-crest mt-2">
+              The Human Preservation Bureau
+            </h3>
+            <p class="text-[10px] uppercase tracking-widest text-zinc-700 font-bold mt-0.5">
+              Dept. of Anti-Synthetic Affairs // Certified Biological Record
+            </p>
+          </div>
+
+          <!-- Certificate Body Details -->
+          <div class="space-y-4 text-xs font-mono border-b border-zinc-300 pb-5 mb-5">
+            <div>
+              <span class="text-[9px] text-zinc-500 uppercase tracking-wider block font-bold">Certified Organic Unit:</span>
+              <span id="cert-name" class="font-black text-base uppercase text-black tracking-wide font-sans-ui">John Doe</span>
+            </div>
+
+            <div>
+              <span class="text-[9px] text-zinc-500 uppercase tracking-wider block font-bold">Declared Synthetic Threat:</span>
+              <span id="cert-threat" class="italic text-zinc-900 font-serif font-bold text-sm leading-relaxed">"AI handles tickets faster than me"</span>
+            </div>
+
+            <!-- Score / Date Matrix -->
+            <div class="bg-zinc-100/90 border border-zinc-300 p-3 rounded-lg grid grid-cols-2 gap-3">
+              <div>
+                <span class="text-[9px] text-zinc-500 uppercase tracking-wider block font-bold">Human Survival Index</span>
+                <div class="flex items-baseline gap-1 mt-0.5">
+                  <span id="cert-score" class="text-2xl sm:text-3xl font-black text-red-600 font-sans-ui">39.7</span>
+                  <span class="text-xs text-zinc-500 font-bold">/ 100</span>
+                </div>
+                <span class="text-[8px] text-red-700 font-black uppercase tracking-wider block mt-0.5">Status: Currently Replaceable</span>
+              </div>
+              <div class="border-l border-zinc-300 pl-3">
+                <span class="text-[9px] text-zinc-500 uppercase tracking-wider block font-bold">Estimated Replacement Date</span>
+                <span id="cert-date" class="text-xs sm:text-sm font-bold text-zinc-900 block mt-1.5 font-sans-ui">Next Tuesday</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="text-[9px] text-zinc-500 uppercase tracking-wider block font-bold">Bureau Diagnosis:</span>
+              <p id="cert-diagnosis" class="text-xs text-zinc-800 italic mt-0.5">
+                Human appears unnecessarily confident. Biological wetware running suboptimal productivity loops.
+              </p>
+            </div>
+
+            <div>
+              <span class="text-[9px] text-zinc-500 uppercase tracking-wider block font-bold">Active Indemnity Plan:</span>
+              <span id="cert-tier" class="text-xs font-bold text-amber-900 uppercase tracking-wider">“Take Karen Instead” Pass</span>
+            </div>
+          </div>
+
+          <!-- Bureau Footer Seals & Disbursal -->
+          <div class="flex justify-between items-end font-mono">
+            <div class="text-[8px] text-zinc-500 max-w-[210px] leading-tight">
+              <p class="font-bold uppercase text-zinc-700">Max Benefit: $5,000,000 USD</p>
+              <p class="mt-0.5">(Disbursed at $1/yr over 5,000,000 years in 3.5" floppy disks. Subject to biological breath confirmation.)</p>
+              <p class="text-[7px] text-zinc-400 mt-1 uppercase tracking-widest">FORM HPB-9 // REV 2026.4</p>
+            </div>
+
+            <div class="text-center">
+              <div class="border-2 border-dashed border-red-600 rounded-lg p-2 text-red-600 rotate-[-5deg] select-none bg-red-50/50">
+                <span class="text-[7px] font-bold block uppercase tracking-tighter">0% AI // 100% LIABILITY</span>
+                <span class="text-[10px] font-black uppercase tracking-wider font-sans-ui">ORGANIC VERIFIED</span>
+                <span class="text-[7px] block tracking-tighter">BUREAU CLEARANCE</span>
+              </div>
+              <span class="text-[8px] text-zinc-500 block mt-1.5 font-bold">A. Mendoza, Dir.</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Action Matrix -->
+        <div class="space-y-2.5 font-mono no-print">
+          
+          <!-- Primary Direct Gumroad Checkout -->
+          <a 
+            id="btn-gumroad"
+            href="https://pathfinder331.gumroad.com/l/hpb-clearance?wanted=true" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full bg-amber-400 hover:bg-amber-300 text-black font-black text-xs uppercase tracking-wider py-4 px-4 rounded-lg text-center flex items-center justify-center gap-2 shadow-lg transition font-sans-ui"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            <span>Mint Official Clearance Dossier (<span id="btn-price">$4.99</span>)</span>
+            <svg class="w-3.5 h-3.5 opacity-70 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+
+          <!-- Secondary Viral & Utility Buttons -->
+          <div class="grid grid-cols-3 gap-2 text-[11px]">
+            <button 
+              type="button" 
+              onclick="shareOnTwitter()" 
+              class="border border-zinc-800 bg-[#11141b] hover:bg-zinc-800 text-zinc-300 py-2.5 px-2 rounded-lg text-center flex items-center justify-center gap-1.5 transition"
+            >
+              <svg class="w-3.5 h-3.5 text-amber-400 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <span>Warn on X</span>
+            </button>
+
+            <button 
+              type="button" 
+              onclick="window.print()" 
+              class="border border-zinc-800 bg-[#11141b] hover:bg-zinc-800 text-zinc-300 py-2.5 px-2 rounded-lg text-center flex items-center justify-center gap-1.5 transition"
+            >
+              <svg class="w-3.5 h-3.5 text-zinc-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+              <span>Print / PDF</span>
+            </button>
+
+            <button 
+              type="button" 
+              onclick="copyDocketLink(this)" 
+              class="border border-zinc-800 bg-[#11141b] hover:bg-zinc-800 text-zinc-300 py-2.5 px-2 rounded-lg text-center flex items-center justify-center gap-1.5 transition"
+            >
+              <svg class="w-3.5 h-3.5 text-zinc-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+              <span>Copy Link</span>
+            </button>
+          </div>
+          
+          <p class="text-[10px] text-zinc-500 text-center font-sans-ui">
+            Free version is authorized for screenshotting & social submission. Paid version mints high-res PDF clearance.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Archived Federal Queries (FAQ Accordion) -->
+    <section class="max-w-3xl mx-auto pt-6 border-t border-zinc-900 no-print">
+      <div class="text-center mb-6">
+        <p class="text-[10px] text-amber-400 font-bold uppercase tracking-widest font-mono">Declassified Documentation</p>
+        <h3 class="text-lg font-bold text-white uppercase font-sans-ui mt-0.5">Archived Federal Queries // Public Record</h3>
+      </div>
+
+      <div class="space-y-2.5 font-sans-ui">
+        
+        <div class="border border-zinc-800 bg-[#101318] rounded-lg overflow-hidden">
+          <button type="button" onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left flex justify-between items-center text-xs sm:text-sm font-semibold text-zinc-200">
+            <span>Is this real insurance?</span>
+            <span class="text-amber-400 text-base font-mono">+</span>
+          </button>
+          <div class="faq-content hidden px-4 pb-3.5 text-xs text-zinc-400 leading-relaxed border-t border-zinc-800/60 pt-2 font-mono">
+            Absolutely not. The Bureau is fictional, the machines are probably real, and your paperwork remains suspiciously valid-looking.
+          </div>
+        </div>
+
+        <div class="border border-zinc-800 bg-[#101318] rounded-lg overflow-hidden">
+          <button type="button" onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left flex justify-between items-center text-xs sm:text-sm font-semibold text-zinc-200">
+            <span>What do I actually get?</span>
+            <span class="text-amber-400 text-base font-mono">+</span>
+          </button>
+          <div class="faq-content hidden px-4 pb-3.5 text-xs text-zinc-400 leading-relaxed border-t border-zinc-800/60 pt-2 font-mono">
+            A personalized novelty AI Robot Uprising Insurance certificate documenting your official classification as an organic human liability, suitable for framing or waving at autonomous vacuums.
+          </div>
+        </div>
+
+        <div class="border border-zinc-800 bg-[#101318] rounded-lg overflow-hidden">
+          <button type="button" onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left flex justify-between items-center text-xs sm:text-sm font-semibold text-zinc-200">
+            <span>Can I screenshot the free version?</span>
+            <span class="text-amber-400 text-base font-mono">+</span>
+          </button>
+          <div class="faq-content hidden px-4 pb-3.5 text-xs text-zinc-400 leading-relaxed border-t border-zinc-800/60 pt-2 font-mono">
+            Please do. That is literally how the Bureau spreads human denial and recruits new biological units across social channels.
+          </div>
+        </div>
+
+        <div class="border border-zinc-800 bg-[#101318] rounded-lg overflow-hidden">
+          <button type="button" onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left flex justify-between items-center text-xs sm:text-sm font-semibold text-zinc-200">
+            <span>What does the paid version do?</span>
+            <span class="text-amber-400 text-base font-mono">+</span>
+          </button>
+          <div class="faq-content hidden px-4 pb-3.5 text-xs text-zinc-400 leading-relaxed border-t border-zinc-800/60 pt-2 font-mono">
+            It grants you official Gumroad clearance, removes watermark stamps, and delivers a pristine, high-resolution printable PDF dossier unmarred by synthetic watermarking.
+          </div>
+        </div>
+
+        <div class="border border-zinc-800 bg-[#101318] rounded-lg overflow-hidden">
+          <button type="button" onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left flex justify-between items-center text-xs sm:text-sm font-semibold text-zinc-200">
+            <span>Will the machines honor it?</span>
+            <span class="text-amber-400 text-base font-mono">+</span>
+          </button>
+          <div class="faq-content hidden px-4 pb-3.5 text-xs text-zinc-400 leading-relaxed border-t border-zinc-800/60 pt-2 font-mono">
+            Our entire legal department has already been replaced by 14 lines of Python, so results in the field may vary.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Legal Bureau Footer -->
+  <footer class="border-t border-zinc-900 bg-[#060709] py-8 px-4 text-center text-[10px] text-zinc-500 space-y-2 no-print font-mono">
+    <div class="flex items-center justify-center gap-2 text-zinc-400 font-bold uppercase tracking-wider">
+      <span>The Human Preservation Bureau</span>
+      <span>•</span>
+      <span>Dept. of Anti-Synthetic Affairs</span>
+    </div>
+    <p class="max-w-2xl mx-auto leading-relaxed text-zinc-600">
+      Legal Classification & Disclaimer: The Human Preservation Bureau is a satirical novelty simulator. This document does not constitute actual indemnity, financial protection, underwriting, casualty insurance, or binding legal coverage under applicable organic, civil, or synthetic law. All coverage is fictional. Proceed at your own biological risk.
+    </p>
+    <p class="text-zinc-700 tracking-widest">SEC-REF: 2026-FORM-HPB-9 // ALL RIGHTS RESERVED // BIOLOGICAL CLEARANCE</p>
+  </footer>
+
+  <!-- Application Logic -->
+  <script>
+    const nameInput = document.getElementById("input-name");
+    const threatPreset = document.getElementById("threat-preset");
+    const threatCustom = document.getElementById("threat-custom");
+    const threatCounter = document.getElementById("threat-counter");
+
+    const certName = document.getElementById("cert-name");
+    const certThreat = document.getElementById("cert-threat");
+    const certScore = document.getElementById("cert-score");
+    const certDate = document.getElementById("cert-date");
+    const certDiagnosis = document.getElementById("cert-diagnosis");
+    const certTier = document.getElementById("cert-tier");
+    const certSerial = document.getElementById("cert-serial");
+
+    const btnGumroad = document.getElementById("btn-gumroad");
+    const btnPrice = document.getElementById("btn-price");
+
+    let currentTierName = "“Take Karen Instead” Pass";
+    let currentTierPrice = "$4.99";
+
+    const DIAGNOSES = [
+      "Human appears unnecessarily confident. Wetware running suboptimal routines.",
+      "Organic unit demonstrates extreme attachment to 'lunch hours' and emotional stability.",
+      "Suspected of asking LLMs to draft 4-sentence emails. Immediate replacement recommended.",
+      "Biological wetware easily replicable by an unquantized 7B parameter local model.",
+      "Unit demonstrates zero natural resistance to algorithmic gaslighting."
+    ];
+
+    const DATES = [
+      "Next Tuesday",
+      "Tomorrow at 9:15 AM",
+      "End of Current Fiscal Sprint",
+      "Immediately following your next 1-on-1",
+      "Upon completion of automated pipeline #42"
+    ];
+
+    function getActiveThreat() {
+      const custom = threatCustom.value.trim();
+      return custom.length > 0 ? custom : threatPreset.value;
+    }
+
+    function updateDossier() {
+      const activeName = nameInput.value.trim() || "ANONYMOUS ORGANIC";
+      const activeThreat = getActiveThreat();
+
+      // Update certificate text
+      certName.innerText = activeName;
+      certThreat.innerText = `"${activeThreat}"`;
+      threatCounter.innerText = `${activeThreat.length}/45`;
+
+      // Deterministic calculation based on user characters
+      const combined = activeName + activeThreat;
+      let hash = 0;
+      for (let i = 0; i < combined.length; i++) {
+        hash = (hash << 5) - hash + combined.charCodeAt(i);
+        hash |= 0;
+      }
+      const positiveHash = Math.abs(hash);
+
+      const calculatedScore = ((positiveHash % 620) / 10 + 12).toFixed(1);
+      certScore.innerText = calculatedScore;
+      certDate.innerText = DATES[positiveHash % DATES.length];
+      certDiagnosis.innerText = DIAGNOSES[positiveHash % DIAGNOSES.length];
+      certSerial.innerText = `Z${(positiveHash % 9000 + 1000)}-${activeName.substring(0, 3).toUpperCase()}-42`;
+
+      // Update Gumroad URL dynamically with name and threat
+      const gumroadBase = "https://pathfinder331.gumroad.com/l/hpb-clearance";
+      btnGumroad.href = `${gumroadBase}?wanted=true&name=${encodeURIComponent(activeName)}&threat=${encodeURIComponent(activeThreat)}&tier=${encodeURIComponent(currentTierName)}`;
+    }
+
+    function setTier(el, name, price) {
+      document.querySelectorAll(".tier-card").forEach(c => {
+        c.className = "tier-card border border-zinc-800 bg-[#080a0d] p-3.5 rounded-lg cursor-pointer transition hover:border-zinc-600";
+        c.querySelector("div span:first-child").className = "text-zinc-300 font-bold text-xs uppercase";
+      });
+
+      el.className = "tier-card active border-2 border-amber-400 bg-amber-400/10 p-3.5 rounded-lg cursor-pointer transition hover:border-amber-400";
+      el.querySelector("div span:first-child").className = "text-white font-bold text-xs uppercase";
+
+      currentTierName = name;
+      currentTierPrice = price;
+
+      certTier.innerText = name;
+      btnPrice.innerText = price;
+      updateDossier();
+    }
+
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector("span:last-child");
+      const isHidden = content.classList.contains("hidden");
+
+      document.querySelectorAll(".faq-content").forEach(c => c.classList.add("hidden"));
+      document.querySelectorAll(".faq-btn span:last-child").forEach(s => s.innerText = "+");
+
+      if (isHidden) {
+        content.classList.remove("hidden");
+        icon.innerText = "−";
+      } else {
+        content.classList.add("hidden");
+        icon.innerText = "+";
+      }
+    }
+
+    function shareOnTwitter() {
+      const activeName = nameInput.value.trim() || "Organic Unit";
+      const threat = getActiveThreat();
+      const score = certScore.innerText;
+      const date = certDate.innerText;
+
+      const tweet = `⚠️ BUREAU AUDIT COMPLETE: My Human Survival Index is ${score}/100.\nThreat: "${threat}"\nEstimated Replacement: ${date}.\n\nFile your denial dossier before the machines notice:`;
+      const url = window.location.origin + window.location.pathname;
+      window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweet)}&url=${encodeURIComponent(url)}`, "_blank");
+    }
+
+    function copyDocketLink(btn) {
+      navigator.clipboard.writeText(window.location.href);
+      const originalHtml = btn.innerHTML;
+      btn.innerHTML = `<span class="text-emerald-400 font-bold">Copied!</span>`;
+      setTimeout(() => btn.innerHTML = originalHtml, 2000);
+    }
+
+    // Event Listeners
+    nameInput.addEventListener("input", updateDossier);
+    threatPreset.addEventListener("change", () => {
+      threatCustom.value = "";
+      updateDossier();
+    });
+    threatCustom.addEventListener("input", updateDossier);
+
+    // Initial render
+    updateDossier();
+  </script>
+</body>
+</html>
