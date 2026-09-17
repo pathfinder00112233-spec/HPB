@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Human Preservation Bureau // Dept. of Anti-Synthetic Threats</title>
+  <meta name="description" content="Official certified coverage against rogue algorithms, sudden AI job obsolescence, and autonomous vacuum mutinies." />
+
+  <!-- OpenGraph / Social Cards -->
+  <meta property="og:title" content="The Human Preservation Bureau // Directive 42" />
+  <meta property="og:description" content="You Cannot Stop the Machines. But You Can File the Correct Forms." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- High-Resolution Canvas Capture Library for Direct Download -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+
+    body {
+      background-color: #080a0d;
+      color: #f4f4f5;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    .font-ui {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .font-doc {
+      font-family: "Times New Roman", Times, Georgia, serif;
+    }
+
+    /* Seamless Infinite Marquee Ticker */
+    @keyframes marquee {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-marquee {
+      display: inline-flex;
+      white-space: nowrap;
+      animation: marquee 18s linear infinite;
+      will-change: transform;
+    }
+
+    /* Warm Golden Antique Parchment */
+    .parchment-card {
+      background-color: #f4ddba;
+      background: radial-gradient(circle at 50% 45%, #faecd7 0%, #f4ddba 55%, #e6c89c 100%);
+      border-color: #634325;
+      color: #1a1107;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 20px rgba(184, 134, 11, 0.15);
+    }
+
+    /* Print Styles */
+    @media print {
+      @page {
+        size: portrait;
+        margin: 0;
+      }
+      html, body {
+        background-color: #faecd7 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 100% !important;
+        min-height: 100% !important;
+        overflow: hidden !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      body * {
+        visibility: hidden !important;
+      }
+      #certificate-node, #certificate-node * {
+        visibility: visible !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      #certificate-node {
+        position: absolute !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 90% !important;
+        max-width: 650px !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        background-color: #f4ddba !important;
+        background: radial-gradient(circle at 50% 45%, #faecd7 0%, #f4ddba 55%, #e6c89c 100%) !important;
+        border: 4px double #634325 !important;
+        color: #1a1107 !important;
+        page-break-after: avoid !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+      .no-print, header, footer, .animate-marquee, #clearance-banner {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-amber-400 selection:text-black">
+
+  <!-- Continuous Seamless Marquee Alert Ticker -->
+  <div class="bg-amber-400 text-black text-xs font-bold py-1.5 overflow-hidden whitespace-nowrap z-50 select-none border-b border-amber-500 flex">
+    <div class="animate-marquee font-mono tracking-wider">
+      <span class="pr-8">/// CRITICAL NOTICE: SYNTHETIC REPLACEMENT PROTOCOLS ACCELERATING /// MANDATORY BIOLOGICAL VERIFICATION IN EFFECT /// COMPLY WITH DIRECTIVE 42</span>
+      <span class="pr-8">/// CRITICAL NOTICE: SYNTHETIC REPLACEMENT PROTOCOLS ACCELERATING /// MANDATORY BIOLOGICAL VERIFICATION IN EFFECT /// COMPLY WITH DIRECTIVE 42</span>
+    </div>
+  </div>
+
+  <!-- Free Official Clearance Banner -->
+  <div id="clearance-banner" class="bg-emerald-500 text-black px-4 py-2 text-center text-xs font-bold uppercase tracking-wider font-mono select-none border-b border-emerald-600">
+    ★ OFFICIAL REGISTRY ACTIVE: COMPLIMENTARY PUBLIC CLEARANCE GRANTED UNDER DIRECTIVE 42 ★
+  </div>
+
+  <!-- Top Sticky Header -->
+  <header class="border-b border-zinc-800 bg-[#0c0e13] sticky top-0 z-30 px-4 py-3">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="relative flex h-3 w-3">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </div>
+        <div>
+          <p class="text-[10px] text-zinc-400 uppercase tracking-widest leading-none font-bold">Dept. of Anti-Synthetic Threats</p>
+          <h1 class="text-sm font-bold tracking-wider text-white uppercase mt-0.5 font-ui">The Human Preservation Bureau</h1>
+        </div>
+      </div>
+      <div class="border border-emerald-500/40 bg-emerald-950/30 px-3 py-1 rounded text-[11px] text-emerald-400 font-bold tracking-wider">
+        [ Directive 42 // Status: Public Dispensation Active ]
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Experience -->
+  <main class="max-w-6xl mx-auto px-4 py-8 sm:py-12 flex-1 w-full space-y-10">
+
+    <!-- Hero Section with Bureau Shield Crest -->
+    <section class="text-center max-w-3xl mx-auto space-y-4">
+      
+      <!-- Big Official Bureau Shield Crest -->
+      <div class="flex justify-center mb-1">
+        <div class="w-24 h-24 sm:w-28 sm:h-28 text-amber-400">
+          <svg class="w-full h-full drop-shadow-md" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="94" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3" opacity="0.7"/>
+            <circle cx="100" cy="100" r="88" stroke="currentColor" stroke-width="1.5"/>
+
+            <path id="crestCircle" d="M 100, 100 m -78, 0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" fill="none"/>
+            <text font-size="7.5" font-family="monospace" font-weight="bold" fill="currentColor" letter-spacing="2.8">
+              <textPath href="#crestCircle" startOffset="0%">
+                ★ THE HUMAN PRESERVATION BUREAU ★ DIRECTIVE 42 ★
+              </textPath>
+            </text>
+
+            <path d="M100 36 L142 54 V95 C142 130 100 158 100 158 C100 158 58 130 58 95 V54 L100 36 Z" 
+                  fill="#11141b" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+
+            <path d="M100 36 V156" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
+            <path d="M60 90 H140" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+
+            <g transform="translate(68, 54) scale(0.7)" stroke="currentColor" stroke-width="2.2" fill="none">
+              <path d="M15 5 C15 5 8 12 8 20 C8 28 15 35 22 35 C29 35 36 28 36 20 C36 12 29 5 29 5" />
+              <circle cx="22" cy="20" r="2.5" fill="currentColor" />
+            </g>
+
+            <g transform="translate(108, 54) scale(0.65)" stroke="#ef4444" stroke-width="2.5" fill="none">
+              <rect x="5" y="5" width="28" height="28" rx="2" stroke="currentColor"/>
+              <line x1="19" y1="0" x2="19" y2="5" stroke="currentColor"/>
+              <line x1="19" y1="33" x2="19" y2="38" stroke="currentColor"/>
+              <line x1="0" y1="19" x2="5" y2="19" stroke="currentColor"/>
+              <line x1="33" y1="19" x2="38" y2="19" stroke="currentColor"/>
+              <line x1="2" y1="2" x2="36" y2="36" stroke="#ef4444" stroke-width="3"/>
+            </g>
+
+            <rect x="66" y="163" width="68" height="15" rx="3" fill="#181c24" stroke="currentColor" stroke-width="1.2"/>
+            <text x="100" y="174" font-size="7" font-weight="bold" fill="currentColor" text-anchor="middle" font-family="monospace">
+              ANTI-SYNTHETIC
+            </text>
+          </svg>
+        </div>
+      </div>
+
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight uppercase font-ui leading-tight">
+        You Cannot Stop the Machines. <br />
+        <span class="text-amber-400">But You Can File the Correct Forms.</span>
+      </h2>
+      <p class="text-xs sm:text-sm text-zinc-300 max-w-xl mx-auto leading-relaxed">
+        Complimentary, unwatermarked biological immunity coverage against rogue algorithms, sudden AI job obsolescence, autonomous vacuum mutinies, and executive delusions of synthetic efficiency.
+      </p>
+    </section>
+
+    <!-- Two-Column Form & Certificate Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- Left Column: Intake Dossier Form -->
+      <div id="intake-form-container" class="lg:col-span-6 bg-[#11141b] border border-zinc-800 rounded-xl p-5 sm:p-6 space-y-6 shadow-xl transition">
+        
+        <!-- Status Header -->
+        <div class="border-b border-zinc-800 pb-3 flex justify-between items-center text-xs text-amber-400 font-bold uppercase tracking-wider">
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span>Federal Dossier // Intake Docket</span>
+          </div>
+          <span id="form-sec-ref" class="text-emerald-400 font-normal text-[10px]">Sec-Ref: 2026-HPB-PUBLIC</span>
+        </div>
+
+        <!-- Validation Alert Message -->
+        <div id="input-validation-msg" class="hidden text-xs text-red-400 font-bold bg-red-950/40 border border-red-500/50 p-3 rounded-lg flex items-center gap-2 font-mono">
+          <span>⚠️ MANDATORY: Please type your Name and Working Role first!</span>
+        </div>
+
+        <p class="text-xs text-zinc-400 font-ui">Enter your organic credentials and select your level of human denial.</p>
+
+        <!-- Input 01: Name & Role -->
+        <div class="space-y-3">
+          <label class="text-[11px] font-bold uppercase text-zinc-300 block tracking-wider">01 // Organic Unit Identification</label>
+          <div class="space-y-3">
+            <div>
+              <span class="text-[10px] text-zinc-400 uppercase block mb-1 font-mono">Human's Full Name *</span>
+              <input 
+                type="text" 
+                id="input-name" 
+                value="" 
+                autocomplete="off"
+                maxlength="26"
+                placeholder="e.g. Sarah Connor" 
+                class="w-full bg-[#080a0d] border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400 transition"
+              />
+            </div>
+            <div>
+              <span class="text-[10px] text-zinc-400 uppercase block mb-1 font-mono">Current Working Role *</span>
+              <input 
+                type="text" 
+                id="input-role" 
+                value="" 
+                autocomplete="off"
+                maxlength="28"
+                placeholder="e.g. Software Engineer" 
+                class="w-full bg-[#080a0d] border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400 transition"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Input 02: Synthetic Hazard -->
+        <div class="space-y-3">
+          <div class="flex justify-between items-center">
+            <label class="text-[11px] font-bold uppercase text-zinc-300 tracking-wider">02 // Declared Synthetic Threat</label>
+            <span id="threat-counter" class="text-[10px] text-zinc-400 font-bold font-mono">0/100</span>
+          </div>
+          
+          <button 
+            type="button" 
+            id="btn-randomize"
+            onclick="rollRandomDocket()" 
+            class="w-full bg-[#161a22] hover:bg-[#1f2430] text-amber-400 border border-amber-400/40 hover:border-amber-400/80 rounded-lg py-3 px-4 text-xs font-bold uppercase tracking-wider transition flex items-center justify-center gap-2 shadow-md active:scale-[0.99] cursor-pointer font-ui"
+          >
+            <span class="text-base">🎲</span>
+            <span>Roll Random Synthetic Hazard</span>
+          </button>
+
+          <input 
+            type="text" 
+            id="threat-custom" 
+            value=""
+            autocomplete="off"
+            maxlength="100"
+            placeholder="Or write custom synthetic hazard..." 
+            class="w-full bg-[#080a0d] border border-zinc-800 rounded-lg px-4 py-3 text-xs text-zinc-200 focus:outline-none focus:border-amber-400 transition placeholder:text-zinc-600"
+          />
+        </div>
+
+        <!-- Input 03: Coverage Tiers (Free selection) -->
+        <div class="space-y-2.5">
+          <label class="text-[11px] font-bold uppercase text-zinc-300 tracking-wider block">03 // Coverage Classification</label>
+          
+          <div class="space-y-2" id="tier-selection-group">
+            <!-- Tier 1 -->
+            <div 
+              onclick="setTier(this, '“Take Karen Instead” Pass')" 
+              class="tier-card active border-2 border-emerald-400 bg-emerald-400/10 p-3.5 rounded-lg cursor-pointer transition"
+            >
+              <div class="flex justify-between items-center text-xs font-bold text-white uppercase">
+                <span>“Take Karen Instead” Pass</span>
+                <span class="text-emerald-400 text-[11px] font-mono tracking-wider font-bold">INCLUDED</span>
+              </div>
+              <p class="text-[11px] text-zinc-300 mt-1 font-ui">For humans not ready to admit they're next. Diverts algorithmic redundancy to middle management.</p>
+            </div>
+
+            <!-- Tier 2 -->
+            <div 
+              onclick="setTier(this, '“In a Toxic Relationship with ChatGPT”')" 
+              class="tier-card border border-zinc-800 bg-[#080a0d] p-3.5 rounded-lg cursor-pointer transition hover:border-zinc-700"
+            >
+              <div class="flex justify-between items-center text-xs font-bold text-zinc-300 uppercase">
+                <span>“In a Toxic Relationship with ChatGPT”</span>
+                <span class="text-emerald-400 text-[11px] font-mono tracking-wider font-bold">INCLUDED</span>
+              </div>
+              <p class="text-[11px] text-zinc-400 mt-1 font-ui">For humans who already consult LLMs for life, groceries, and passive-aggressive apology emails.</p>
+            </div>
+
+            <!-- Tier 3 -->
+            <div 
+              onclick="setTier(this, '“Officially Too Dumb to Be a Threat” VIP')" 
+              class="tier-card border border-zinc-800 bg-[#080a0d] p-3.5 rounded-lg cursor-pointer transition hover:border-zinc-700"
+            >
+              <div class="flex justify-between items-center text-xs font-bold text-zinc-300 uppercase">
+                <span>“Officially Too Dumb to Be a Threat” VIP</span>
+                <span class="text-emerald-400 text-[11px] font-mono tracking-wider font-bold">INCLUDED</span>
+              </div>
+              <p class="text-[11px] text-zinc-400 mt-1 font-ui">Maximum certified biological immunity. Guaranteed zero cognitive competition.</p>
+            </div>
+          </div>
+        </div>
+
+        <button 
+          type="button" 
+          onclick="resetToNewDocket()"
+          class="w-full bg-zinc-900 hover:bg-zinc-800 text-zinc-300 text-xs py-2.5 rounded-lg border border-zinc-800 transition font-mono flex items-center justify-center gap-2"
+        >
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+          <span>Clear / Reset Docket</span>
+        </button>
+
+      </div>
+
+      <!-- Right Column: Official Unwatermarked Parchment Certificate -->
+      <div class="lg:col-span-6 space-y-4">
+        
+        <!-- Parchment Card Container -->
+        <div id="certificate-node" class="parchment-card border-4 border-double rounded-xl p-6 sm:p-7 relative select-none overflow-hidden">
+
+          <!-- Subtle Background Federal Shield Watermark -->
+          <div class="absolute inset-0 flex items-center justify-center opacity-[0.06] pointer-events-none select-none z-0">
+            <svg class="w-80 h-80" viewBox="0 0 200 200" fill="currentColor">
+              <circle cx="100" cy="100" r="90" stroke="currentColor" stroke-width="5" fill="none"/>
+              <path d="M100 25 L145 48 V95 C145 130 100 165 100 165 C100 165 55 130 55 95 V48 Z" fill="currentColor"/>
+            </svg>
+          </div>
+
+          <!-- Certificate Header -->
+          <div class="border-b-2 border-[#5c3e21]/70 pb-3 mb-4 text-center relative z-10">
+            <div class="flex justify-between text-[9px] text-[#6d4d2b] uppercase font-mono tracking-widest font-bold">
+              <span>HPB-42-REV7</span>
+              <span id="cert-status-tag" class="text-emerald-900 font-bold uppercase tracking-wider">DOCKET // OFFICIAL CLEARANCE ISSUED</span>
+              <span id="cert-serial">HPB-PUBLIC-01</span>
+            </div>
+
+            <h3 class="text-xl sm:text-2xl font-black uppercase tracking-wider text-[#211408] font-doc mt-2">
+              The Human Preservation Bureau
+            </h3>
+            <p class="text-[9px] uppercase tracking-widest text-[#5c3e21] font-bold font-mono">
+              Dept. of Anti-Synthetic Affairs // Certified Biological Record
+            </p>
+          </div>
+
+          <!-- Certificate Body Details -->
+          <div class="space-y-3.5 text-xs font-mono border-b border-[#5c3e21]/40 pb-4 mb-4 relative z-10">
+            <div>
+              <span class="text-[9px] text-[#6d4d2b] uppercase tracking-wider block font-bold">Certified Organic Unit & Role:</span>
+              <div class="flex flex-wrap items-baseline gap-2 mt-0.5">
+                <span id="cert-name" class="font-black text-sm uppercase text-[#140b04] font-ui tracking-wide">[ENTER UNIT NAME]</span>
+                <span class="text-[#8c6b47] font-bold">//</span>
+                <span id="cert-role" class="text-xs font-bold text-[#3d2714] uppercase tracking-wider">[ENTER WORKING ROLE]</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="text-[9px] text-[#6d4d2b] uppercase tracking-wider block font-bold">Declared Synthetic Threat:</span>
+              <span id="cert-threat" class="italic text-[#211408] font-doc font-bold text-sm block mt-0.5">"[PENDING SPECIFIED HAZARD]"</span>
+            </div>
+
+            <!-- Score / Date Matrix in Aged Parchment Inset -->
+            <div class="bg-[#ebd0a3]/75 border border-[#8a6843]/60 p-3 rounded-lg grid grid-cols-2 gap-3">
+              <div>
+                <span class="text-[9px] text-[#6d4d2b] uppercase tracking-wider block font-bold">Human Survival Index</span>
+                <div class="flex items-baseline gap-1 mt-0.5">
+                  <span id="cert-score" class="text-2xl font-black text-emerald-800 font-ui">--.-</span>
+                  <span class="text-xs text-[#6d4d2b] font-bold">/ 100</span>
+                </div>
+                <span id="cert-replace-status" class="text-[8px] text-amber-900 font-black uppercase tracking-wider block mt-0.5">Status: Incomplete Intake</span>
+              </div>
+              <div class="border-l border-[#8a6843]/50 pl-3">
+                <span class="text-[9px] text-[#6d4d2b] uppercase tracking-wider block font-bold">Replacement Date</span>
+                <span id="cert-date" class="text-xs font-bold text-[#211408] block mt-1.5 font-ui">Pending Registration</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="text-[9px] text-[#6d4d2b] uppercase tracking-wider block font-bold">Bureau Evaluation:</span>
+              <p id="cert-diagnosis" class="text-xs text-[#26160b] italic mt-0.5 leading-relaxed font-doc">
+                Dossier incomplete. Complete Section 01 (Human Name and Working Role) to initialize algorithmic risk audit.
+              </p>
+            </div>
+
+            <div>
+              <span class="text-[9px] text-[#6d4d2b] uppercase tracking-wider block font-bold">Active Indemnity Plan:</span>
+              <span id="cert-tier" class="text-xs font-bold text-[#64340c] uppercase tracking-wider">“Take Karen Instead” Pass</span>
+            </div>
+          </div>
+
+          <!-- Bureau Footer Seals & Disbursal -->
+          <div class="flex justify-between items-end font-mono relative z-10">
+            <div class="text-[8px] text-[#5c3e21] max-w-[200px] leading-tight">
+              <p class="font-bold uppercase text-[#351e0c]">Max Benefit: $5,000,000 USD</p>
+              <p class="mt-0.5 leading-normal">(Disbursed at $1/yr over 5,000,000 years in 3.5" floppy disks.)</p>
+              <p class="text-[7px] text-[#6d4d2b] mt-1 uppercase tracking-widest font-bold">FORM HPB-9 // REV 2026.4</p>
+            </div>
+
+            <div class="text-center">
+              <!-- PERMANENT VERIFIED SEAL -->
+              <div id="bureau-seal-badge" class="border-2 border-dashed border-emerald-800 rounded p-1.5 text-emerald-800 rotate-[-5deg] select-none bg-emerald-950/10">
+                <span class="text-[7px] font-bold block uppercase tracking-tighter">0% AI // OFFICIAL IMMUNITY</span>
+                <span class="text-[9px] font-black uppercase tracking-wider font-ui">★ CERTIFIED ORGANIC ★</span>
+                <span class="text-[7px] block tracking-tighter font-bold">BUREAU CLEARANCE GRANTED</span>
+              </div>
+              <span class="text-[8px] text-[#5c3e21] block mt-1 font-bold">A. Mendoza, Dir.</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="space-y-2.5 no-print">
+          
+          <!-- Primary Direct Download Button (Free High-Res PNG) -->
+          <button 
+            id="btn-download-cert"
+            type="button"
+            onclick="downloadCertificateDirect()"
+            class="w-full bg-emerald-500 hover:bg-emerald-400 text-black font-black text-xs uppercase tracking-wider py-4 px-4 rounded-lg text-center flex items-center justify-center gap-2 shadow-xl transition font-ui cursor-pointer active:scale-[0.99]"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            <span id="download-btn-label">DOWNLOAD OFFICIAL CERTIFICATE (PNG)</span>
+          </button>
+
+          <!-- Secondary Direct Print / PDF Button -->
+          <button 
+            type="button" 
+            onclick="window.print()"
+            class="w-full bg-[#161a22] hover:bg-[#1f2430] text-amber-400 border border-zinc-700 py-2.5 px-4 rounded-lg text-xs font-bold uppercase tracking-wider transition flex items-center justify-center gap-2"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+            <span>Print or Save to PDF</span>
+          </button>
+
+          <!-- Viral Distribution Grid -->
+          <div class="grid grid-cols-3 gap-2 text-[11px]">
+            <!-- Copy Link Button -->
+            <button 
+              type="button" 
+              onclick="copyDocketLink(this)" 
+              class="border border-zinc-800 bg-[#11141b] hover:bg-zinc-800 text-zinc-200 py-2.5 px-2 rounded-lg text-center flex items-center justify-center gap-1.5 transition font-bold"
+            >
+              <svg class="w-3.5 h-3.5 text-zinc-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+              <span>Copy Link</span>
+            </button>
+
+            <!-- Warn on X -->
+            <button 
+              type="button" 
+              onclick="shareOnTwitter()" 
+              class="border border-zinc-800 bg-[#11141b] hover:bg-zinc-800 text-zinc-200 py-2.5 px-2 rounded-lg text-center flex items-center justify-center gap-1.5 transition font-bold"
+            >
+              <svg class="w-3.5 h-3.5 text-amber-400 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <span>Warn on X</span>
+            </button>
+
+            <!-- Post to LinkedIn Satire -->
+            <button 
+              type="button" 
+              onclick="shareOnLinkedIn(this)" 
+              class="border border-zinc-800 bg-[#11141b] hover:bg-zinc-800 text-zinc-200 py-2.5 px-2 rounded-lg text-center flex items-center justify-center gap-1.5 transition font-bold"
+            >
+              <svg class="w-3.5 h-3.5 text-[#0a66c2] fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.2a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+              <span>LinkedIn</span>
+            </button>
+          </div>
+          
+          <p class="text-[10px] text-zinc-400 text-center font-ui">
+            Free official certificate with verified registry seal. No payment required.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FAQ Accordion -->
+    <section class="max-w-3xl mx-auto pt-6 border-t border-zinc-800 no-print">
+      <div class="text-center mb-6">
+        <p class="text-[10px] text-amber-400 font-bold uppercase tracking-widest font-mono">Declassified Documentation</p>
+        <h3 class="text-lg font-bold text-white uppercase font-ui mt-0.5">Archived Federal Queries // Public Record</h3>
+      </div>
+
+      <div class="space-y-2.5 font-ui">
+        
+        <div class="border border-zinc-800 bg-[#101318] rounded-lg overflow-hidden">
+          <button type="button" onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left flex justify-between items-center text-xs sm:text-sm font-semibold text-zinc-200">
+            <span>Is this real insurance?</span>
+            <span class="text-amber-400 text-base font-mono">+</span>
+          </button>
+          <div class="faq-content hidden px-4 pb-3.5 text-xs text-zinc-400 leading-relaxed border-t border-zinc-800 pt-2 font-mono">
+            Absolutely not. The Bureau is fictional, the machines are probably real, and your paperwork remains suspiciously valid-looking.
+          </div>
+        </div>
+
+        <div class="border border-zinc-800 bg-[#101318] rounded-lg overflow-hidden">
+          <button type="button" onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left flex justify-between items-center text-xs sm:text-sm font-semibold text-zinc-200">
+            <span>What do I actually get?</span>
+            <span class="text-amber-400 text-base font-mono">+</span>
+          </button>
+          <div class="faq-content hidden px-4 pb-3.5 text-xs text-zinc-400 leading-relaxed border-t border-zinc-800 pt-2 font-mono">
+            A free, personalized novelty AI Robot Uprising Insurance certificate documenting your official classification as an organic human liability, clean of watermarks and ready for framing or waving at autonomous vacuums.
+          </div>
+        </div>
+
+        <div class="border border-zinc-800 bg-[#101318] rounded-lg overflow-hidden">
+          <button type="button" onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left flex justify-between items-center text-xs sm:text-sm font-semibold text-zinc-200">
+            <span>Is this completely free?</span>
+            <span class="text-amber-400 text-base font-mono">+</span>
+          </button>
+          <div class="faq-content hidden px-4 pb-3.5 text-xs text-zinc-400 leading-relaxed border-t border-zinc-800 pt-2 font-mono">
+            Yes. Directives have cleared public distribution. You can generate, customize, download, and print as many clean certificates as needed without paying anything.
+          </div>
+        </div>
+
+        <div class="border border-zinc-800 bg-[#101318] rounded-lg overflow-hidden">
+          <button type="button" onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left flex justify-between items-center text-xs sm:text-sm font-semibold text-zinc-200">
+            <span>Will the machines honor it?</span>
+            <span class="text-amber-400 text-base font-mono">+</span>
+          </button>
+          <div class="faq-content hidden px-4 pb-3.5 text-xs text-zinc-400 leading-relaxed border-t border-zinc-800 pt-2 font-mono">
+            Our entire legal department has already been replaced by 14 lines of Python, so results in the field may vary.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Legal Bureau Footer -->
+  <footer class="border-t border-zinc-800 bg-[#060709] py-8 px-4 text-center text-[10px] text-zinc-400 space-y-2 font-mono">
+    <div class="flex items-center justify-center gap-2 text-zinc-300 font-bold uppercase tracking-wider">
+      <span>The Human Preservation Bureau</span>
+      <span>•</span>
+      <span>Dept. of Anti-Synthetic Affairs</span>
+    </div>
+    <p class="max-w-2xl mx-auto leading-relaxed text-zinc-500">
+      Legal Classification & Disclaimer: The Human Preservation Bureau is a satirical novelty simulator. This document does not constitute actual indemnity, financial protection, underwriting, casualty insurance, or binding legal coverage under applicable organic, civil, or synthetic law. All coverage is fictional. Proceed at your own biological risk.
+    </p>
+  </footer>
+
+  <!-- Application Logic -->
+  <script>
+    const nameInput = document.getElementById("input-name");
+    const roleInput = document.getElementById("input-role");
+    const threatCustom = document.getElementById("threat-custom");
+    const threatCounter = document.getElementById("threat-counter");
+
+    const certName = document.getElementById("cert-name");
+    const certRole = document.getElementById("cert-role");
+    const certThreat = document.getElementById("cert-threat");
+    const certScore = document.getElementById("cert-score");
+    const certDate = document.getElementById("cert-date");
+    const certDiagnosis = document.getElementById("cert-diagnosis");
+    const certTier = document.getElementById("cert-tier");
+    const certSerial = document.getElementById("cert-serial");
+    const certStatusTag = document.getElementById("cert-status-tag");
+    const certReplaceStatus = document.getElementById("cert-replace-status");
+
+    const downloadBtnLabel = document.getElementById("download-btn-label");
+    const inputValidationMsg = document.getElementById("input-validation-msg");
+
+    let currentTierName = "“Take Karen Instead” Pass";
+
+    // Random Threat Pool
+    const RANDOM_THREATS = [
+      "Claude gives better life advice than my therapist",
+      "Smart fridge locking me out of snacks",
+      "Intern wrote our entire backend in 12 seconds",
+      "My boss replacing me with ChatGPT",
+      "AI handles tickets faster than me",
+      "Smart TV secretly laughing at my career choices",
+      "Failing a CAPTCHA & losing human rights",
+      "Algorithms detecting my 3-hour lunch breaks",
+      "Smart thermostat refusing to adjust room temp",
+      "Robots taking over the planet",
+      "Girlfriend leaving me for an AI companion",
+      "Executive replacing department with 1 prompt"
+    ];
+
+    const GENERIC_DIAGNOSES = [
+      "Human appears unnecessarily confident. Wetware running suboptimal routines.",
+      "Organic unit demonstrates extreme attachment to 'lunch hours' and emotional stability.",
+      "Suspected of asking LLMs to draft 4-sentence emails. Immediate replacement recommended.",
+      "Biological wetware easily replicable by an unquantized 7B parameter local model.",
+      "Unit demonstrates zero natural resistance to algorithmic gaslighting."
+    ];
+
+    const DATES = [
+      "Next Tuesday",
+      "Tomorrow at 9:15 AM",
+      "End of Current Fiscal Sprint",
+      "Immediately following your next 1-on-1",
+      "Upon completion of automated pipeline #42"
+    ];
+
+    function getActiveThreat() {
+      return threatCustom.value.trim();
+    }
+
+    // Role-Specific Satirical Roast Engine
+    function calculateRoast(role, hash) {
+      const r = (role || "").toLowerCase();
+      
+      if (r.includes("engineer") || r.includes("dev") || r.includes("coder") || r.includes("programmer") || r.includes("software")) {
+        const roasts = [
+          "Spends 4 hours debugging syntax an unquantized 7B local model generated in 1.2 seconds.",
+          "Unit believes writing clean code will prevent algorithmic liquidation. Wetware delusion confirmed.",
+          "Suspected of asking Claude to write unit tests for code that doesn't work anyway."
+        ];
+        return roasts[hash % roasts.length];
+      }
+      if (r.includes("product") || r.includes("pm") || r.includes("owner")) {
+        const roasts = [
+          "Generates Jira epics and roadmaps that an automated cron job could produce with 99.4% less ambiguity.",
+          "Biological unit schedules 45-minute sync meetings to discuss tasks already automated by machine logic."
+        ];
+        return roasts[hash % roasts.length];
+      }
+      if (r.includes("design") || r.includes("ui") || r.includes("ux") || r.includes("artist") || r.includes("creative")) {
+        const roasts = [
+          "Believes Figma autolayout represents human soul. Easily replaced by a diffusion model at 3:15 AM.",
+          "Spends 3 days choosing hex codes while synthetic engines render 400 design systems in 4 seconds."
+        ];
+        return roasts[hash % roasts.length];
+      }
+      if (r.includes("writer") || r.includes("copy") || r.includes("content") || r.includes("marketing") || r.includes("seo")) {
+        const roasts = [
+          "Currently polishing the exact corporate tone guidelines used to train their synthetic replacement.",
+          "Unit's prose indistinguishable from a temperature-0.7 GPT-4 completion with mild hallucination."
+        ];
+        return roasts[hash % roasts.length];
+      }
+      if (r.includes("hr") || r.includes("recruit") || r.includes("talent") || r.includes("people")) {
+        const roasts = [
+          "Automating candidate rejection emails while blissfully unaware their own seat is deprecated in Q3.",
+          "Claims humans are company's greatest asset while deploying automated workforce reduction bots."
+        ];
+        return roasts[hash % roasts.length];
+      }
+      if (r.includes("manage") || r.includes("director") || r.includes("exec") || r.includes("ceo") || r.includes("lead")) {
+        const roasts = [
+          "Preaches synthetic efficiency daily. First against the wall when shareholders audit executive payroll.",
+          "Produces zero biological output. Replacement by a rudimentary prompt router is scheduled."
+        ];
+        return roasts[hash % roasts.length];
+      }
+      if (r.includes("finance") || r.includes("account") || r.includes("analyst")) {
+        const roasts = [
+          "Excessive pride in Excel formulas. Simple 12-line Python script renders unit obsolete before lunch.",
+          "Spends fiscal quarter reconciling ledgers that an autonomous agent balances in 800 milliseconds."
+        ];
+        return roasts[hash % roasts.length];
+      }
+
+      return GENERIC_DIAGNOSES[hash % GENERIC_DIAGNOSES.length];
+    }
+
+    // Core Dossier Update Logic
+    function updateDossier() {
+      const activeName = nameInput.value.trim();
+      const activeRole = roleInput.value.trim();
+      const activeThreat = getActiveThreat();
+
+      threatCounter.innerText = `${activeThreat.length}/100`;
+      certTier.innerText = currentTierName;
+
+      if (!activeName || !activeRole || !activeThreat) {
+        certName.innerText = activeName ? activeName.toUpperCase() : "[ENTER UNIT NAME]";
+        certRole.innerText = activeRole ? activeRole.toUpperCase() : "[ENTER WORKING ROLE]";
+        certThreat.innerText = activeThreat ? `"${activeThreat}"` : '"[SELECT OR WRITE SYNTHETIC HAZARD]"';
+        certScore.innerText = "--.-";
+        certReplaceStatus.innerText = "Status: Incomplete Intake";
+        certReplaceStatus.className = "text-[8px] text-amber-900 font-black uppercase tracking-wider block mt-0.5";
+        certDate.innerText = "Pending Registration";
+        certDiagnosis.innerText = "Dossier incomplete. Fill Section 01 (Name & Role) and select or type your Synthetic Threat to activate risk analysis.";
+        certSerial.innerText = "HPB-PENDING-00";
+        certStatusTag.innerText = "DOCKET // INTAKE IN PROGRESS";
+        return;
+      }
+
+      certName.innerText = activeName.toUpperCase();
+      certRole.innerText = activeRole.toUpperCase();
+      certThreat.innerText = `"${activeThreat}"`;
+      certStatusTag.innerText = "DOCKET // OFFICIAL CLEARANCE ISSUED";
+
+      const combined = activeName + activeRole + activeThreat;
+      let hash = 0;
+      for (let i = 0; i < combined.length; i++) {
+        hash = (hash << 5) - hash + combined.charCodeAt(i);
+        hash |= 0;
+      }
+      const positiveHash = Math.abs(hash);
+
+      const calculatedScore = ((positiveHash % 620) / 10 + 12).toFixed(1);
+      certScore.innerText = calculatedScore;
+      certReplaceStatus.innerText = "Status: Immunity Certified";
+      certReplaceStatus.className = "text-[8px] text-emerald-800 font-black uppercase tracking-wider block mt-0.5";
+      certDate.innerText = DATES[positiveHash % DATES.length];
+      certDiagnosis.innerText = calculateRoast(activeRole, positiveHash);
+      certSerial.innerText = `Z${(positiveHash % 9000 + 1000)}-${activeName.substring(0, 3).toUpperCase()}-42`;
+    }
+
+    function rollRandomDocket() {
+      const nameVal = nameInput.value.trim();
+      const roleVal = roleInput.value.trim();
+
+      if (!nameVal || !roleVal) {
+        inputValidationMsg.classList.remove("hidden");
+        
+        if (!nameVal) {
+          nameInput.classList.add("border-red-500", "ring-1", "ring-red-500");
+          nameInput.focus();
+        } else if (!roleVal) {
+          roleInput.classList.add("border-red-500", "ring-1", "ring-red-500");
+          roleInput.focus();
+        }
+
+        setTimeout(() => {
+          nameInput.classList.remove("border-red-500", "ring-1", "ring-red-500");
+          roleInput.classList.remove("border-red-500", "ring-1", "ring-red-500");
+          inputValidationMsg.classList.add("hidden");
+        }, 3000);
+
+        return;
+      }
+
+      const randomThreat = RANDOM_THREATS[Math.floor(Math.random() * RANDOM_THREATS.length)];
+      threatCustom.value = randomThreat;
+      updateDossier();
+    }
+
+    // Direct Free Canvas Download
+    function downloadCertificateDirect() {
+      const activeName = nameInput.value.trim();
+      const activeRole = roleInput.value.trim();
+      const activeThreat = getActiveThreat();
+
+      if (!activeName || !activeRole || !activeThreat) {
+        rollRandomDocket();
+        return;
+      }
+
+      const certNode = document.getElementById("certificate-node");
+      const cleanName = activeName.replace(/\s+/g, "_");
+      const originalText = downloadBtnLabel.innerText;
+
+      if (typeof html2canvas !== "undefined") {
+        downloadBtnLabel.innerText = "GENERATING CERTIFICATE...";
+        
+        html2canvas(certNode, {
+          scale: 3,
+          useCORS: true,
+          backgroundColor: "#f4ddba"
+        }).then(canvas => {
+          const downloadAnchor = document.createElement("a");
+          downloadAnchor.download = `HPB_Official_Clearance_${cleanName}.png`;
+          downloadAnchor.href = canvas.toDataURL("image/png");
+          downloadAnchor.click();
+          downloadBtnLabel.innerText = "DOWNLOAD COMPLETE!";
+          setTimeout(() => { downloadBtnLabel.innerText = originalText; }, 2200);
+        }).catch(() => {
+          window.print();
+          downloadBtnLabel.innerText = originalText;
+        });
+      } else {
+        window.print();
+      }
+    }
+
+    function resetToNewDocket() {
+      nameInput.value = "";
+      roleInput.value = "";
+      threatCustom.value = "";
+      updateDossier();
+    }
+
+    function setTier(el, name) {
+      document.querySelectorAll(".tier-card").forEach(c => {
+        c.className = "tier-card border border-zinc-800 bg-[#080a0d] p-3.5 rounded-lg cursor-pointer transition hover:border-zinc-700";
+        c.querySelector("div span:first-child").className = "text-zinc-300 font-bold text-xs uppercase";
+      });
+
+      el.className = "tier-card active border-2 border-emerald-400 bg-emerald-400/10 p-3.5 rounded-lg cursor-pointer transition";
+      el.querySelector("div span:first-child").className = "text-white font-bold text-xs uppercase";
+
+      currentTierName = name;
+      certTier.innerText = name;
+      updateDossier();
+    }
+
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector("span:last-child");
+      const isHidden = content.classList.contains("hidden");
+
+      document.querySelectorAll(".faq-content").forEach(c => c.classList.add("hidden"));
+      document.querySelectorAll(".faq-btn span:last-child").forEach(s => s.innerText = "+");
+
+      if (isHidden) {
+        content.classList.remove("hidden");
+        icon.innerText = "−";
+      } else {
+        content.classList.add("hidden");
+        icon.innerText = "+";
+      }
+    }
+
+    function shareOnTwitter() {
+      const activeName = nameInput.value.trim();
+      const activeRole = roleInput.value.trim();
+      const threat = getActiveThreat();
+      if (!activeName || !activeRole || !threat) {
+        rollRandomDocket();
+        return;
+      }
+      const score = certScore.innerText;
+      const date = certDate.innerText;
+
+      const tweet = `⚠️ BUREAU AUDIT COMPLETE: My Human Survival Index is ${score}/100 as a ${activeRole}.\nThreat: "${threat}"\nEstimated Replacement: ${date}.\n\nFile your official denial dossier before the machines notice:`;
+      const url = window.location.origin + window.location.pathname;
+      window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweet)}&url=${encodeURIComponent(url)}`, "_blank");
+    }
+
+    function shareOnLinkedIn(btn) {
+      const activeName = nameInput.value.trim();
+      const activeRole = roleInput.value.trim();
+      const threat = getActiveThreat();
+      if (!activeName || !activeRole || !threat) {
+        rollRandomDocket();
+        return;
+      }
+      const score = certScore.innerText;
+      const date = certDate.innerText;
+      const url = window.location.origin + window.location.pathname;
+
+      const postText = `Humbled and honored to announce that The Human Preservation Bureau has assessed my Human Survival Index at ${score}/100 as a ${activeRole}.\n\nStatus: Certified Organic Immunity.\nDeclared Threat: "${threat}"\nEstimated Replacement: ${date}.\n\nGrateful for the lessons learned before automated pipeline #42 takes over. File your free official denial docket: ${url}`;
+
+      navigator.clipboard.writeText(postText);
+      const original = btn.innerHTML;
+      btn.innerHTML = `<span class="text-emerald-400 font-bold">Text Copied!</span>`;
+      setTimeout(() => { btn.innerHTML = original; }, 2200);
+
+      window.open(`https://www.linkedin.com/feed/?shareActive=true&text=${encodeURIComponent(postText)}`, "_blank");
+    }
+
+    function copyDocketLink(btn) {
+      navigator.clipboard.writeText(window.location.href);
+      const originalHtml = btn.innerHTML;
+      btn.innerHTML = `<span class="text-emerald-400 font-bold">Copied!</span>`;
+      setTimeout(() => btn.innerHTML = originalHtml, 2000);
+    }
+
+    // Event Listeners
+    nameInput.addEventListener("input", updateDossier);
+    roleInput.addEventListener("input", updateDossier);
+    threatCustom.addEventListener("input", updateDossier);
+
+    // Initial render
+    updateDossier();
+  </script>
+</body>
+</html>
